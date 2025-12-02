@@ -6,3 +6,4 @@ A simple utility library for demonstration purposes.
 
 - `capitalize(str)` - Capitalize the first letter
 - `truncate(str, maxLength)` - Truncate string with ellipsis
+- `reverseString(str)` - Reverse a given string
