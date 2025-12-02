@@ -2,10 +2,31 @@
  * Utility functions for string manipulation
  */
 
+/**
+ * Capitalizes the first character of a string
+ * @param str - The string to capitalize
+ * @returns The string with the first character capitalized
+ * @example
+ * ```typescript
+ * capitalize("hello") // returns "Hello"
+ * capitalize("world") // returns "World"
+ * ```
+ */
 export function capitalize(str: string): string {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+/**
+ * Truncates a string to a specified maximum length and adds ellipsis if needed
+ * @param str - The string to truncate
+ * @param maxLength - The maximum length of the string before truncation
+ * @returns The truncated string with ellipsis if it was longer than maxLength
+ * @example
+ * ```typescript
+ * truncate("hello world", 5) // returns "hello..."
+ * truncate("hi", 10) // returns "hi"
+ * ```
+ */
 export function truncate(str: string, maxLength: number): string {
   if (str.length <= maxLength) return str;
   return str.slice(0, maxLength) + "...";
